@@ -35,7 +35,7 @@ git clone https://github.com/rahulaga/craft-kubernetes-workshop.git
 * application + dependencies = image
 * Runtime environment (cgroups, namespaces, env vars)
 
-!(images/container.png)
+![Container](images/container.png)
 
 Build a container defined in a Dockerfile.
 
