@@ -37,7 +37,7 @@ git clone https://github.com/rahulaga/craft-kubernetes-workshop.git
 
 ![Container](images/container.png)
 
-Build a container defined in a Dockerfile.
+Build a container defined in a Dockerfile. Assuming all containers exist and using ones provided by Kelsey. Separate discussion needed on how to build containers. 
 
 ## Kubernetes
 * Container management, scheduling, and service discovery.
@@ -140,5 +140,3 @@ Kubernetes is all about applications and in this section you will utilize the Ku
   * [Kubernetes](http://googlecloudplatform.github.io/kubernetes)
   * [gcloud Tool Guide](https://cloud.google.com/sdk/gcloud)
   * [Docker](https://docs.docker.com)
-  * [etcd](https://coreos.com/docs/distributed-configuration/getting-started-with-etcd)
-  * [nginx](http://nginx.org)
