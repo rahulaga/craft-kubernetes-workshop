@@ -30,6 +30,70 @@ Login into your Cloud Shell environment and clone this repository.
 git clone https://github.com/rahulaga/craft-kubernetes-workshop.git
 ```
 
+## Containers
+* Unix processes not lightweight Virtual Machines
+* application + dependencies = image
+* Runtime environment (cgroups, namespaces, env vars)
+
+!(images/container.png)
+
+Build a container defined in a Dockerfile.
+
+## Kubernetes
+* Container management, scheduling, and service discovery.
+* API driven application management
+* Agents monitor endpoints for state changes (real-time)
+* Controllers enforce desired state
+* Labels identify resources (nodes, applications, services)
+
+### High level concepts
+* node
+* pod
+* scheduler
+* replication controller
+* service
+
+### Node
+* Runs containers and proxies service requests.
+* docker
+* kubelet
+* proxy
+
+!(images/kubernetes-nodes-2.png)
+
+### Pod
+* Represents a logical application.
+* One or more containers
+* Shared namespaces
+
+!(images/pod.png)
+
+### Scheduler
+* Schedules pods to run on nodes.
+* Global scheduler for long running jobs
+* Best fit chosen based on pod requirements
+* Pluggable
+
+!(images/kubernetes-scheduler.png)
+
+### Replication Controller
+* Manages a replicated set of pods.
+* Creates pods from a template
+* Ensures desired number of pods are running
+* Online resizing
+
+!(images/kubernetes-rc.png)
+
+* Self-healing
+
+!(images/kubernetes-rc-reschedule.png)
+### Service
+* Service discovery for pods.
+* Proxy runs on each node
+* Virtual IP per service (avoid port collisions)
+* Basic round-robin algorithm
+* Dynamic backends based on label queries
+
 ## Provision Kubernetes using GKE
 
 Kubernetes can be configured with many options and add-ons, but can be time consuming to bootstrap from the ground up. In this section you will bootstrap Kubernetes using [Google Container Engine](https://cloud.google.com/container-engine) (GKE).
