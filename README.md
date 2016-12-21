@@ -59,14 +59,14 @@ Build a container defined in a Dockerfile.
 * kubelet
 * proxy
 
-!(images/kubernetes-nodes-2.png)
+![Node](images/kubernetes-nodes-2.png)
 
 ### Pod
 * Represents a logical application.
 * One or more containers
 * Shared namespaces
 
-!(images/pod.png)
+![Pod](images/pod.png)
 
 ### Scheduler
 * Schedules pods to run on nodes.
@@ -74,7 +74,7 @@ Build a container defined in a Dockerfile.
 * Best fit chosen based on pod requirements
 * Pluggable
 
-!(images/kubernetes-scheduler.png)
+![Scheduler](images/kubernetes-scheduler.png)
 
 ### Replication Controller
 * Manages a replicated set of pods.
@@ -82,11 +82,12 @@ Build a container defined in a Dockerfile.
 * Ensures desired number of pods are running
 * Online resizing
 
-!(images/kubernetes-rc.png)
+![RC](images/kubernetes-rc.png)
 
 * Self-healing
 
-!(images/kubernetes-rc-reschedule.png)
+![Heal](images/kubernetes-rc-reschedule.png)
+
 ### Service
 * Service discovery for pods.
 * Proxy runs on each node
